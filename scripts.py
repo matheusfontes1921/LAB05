@@ -9,7 +9,7 @@ urls = {
     'GraphQL': 'https://api.github.com/graphql'
 }
 
-token = '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'
+token = 'token'
 
 def measure_response(url, query=None):
     headers = {
@@ -35,7 +35,11 @@ results = {
     'Response Time (s)': [],
     'Response Size (bytes)': []
 }
-
+rest_complexities = {
+    'low': 'https://api.github.com/users/octocat/repos?per_page=10',
+    'medium': 'https://api.github.com/users/octocat/repos?per_page=100',
+    'high': 'https://api.github.com/users/octocat/repos?per_page=250'
+}
 graphql_queries = {
     'low': """
         {

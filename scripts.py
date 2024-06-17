@@ -9,7 +9,7 @@ urls = {
     'GraphQL': 'https://api.github.com/graphql'
 }
 
-token = 'TOKEN'
+token = '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'
 
 def measure_response(url, query=None):
     headers = {
